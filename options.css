@@ -1,0 +1,52 @@
+/* General Body Styles */
+body {
+    background-color: #f8f9fa; /* Light background color for better readability */
+    font-family: Arial, sans-serif; /* Clean and modern font */
+    color: #333; /* Dark text for contrast */
+    margin: 0;
+    padding: 0;
+}
+
+/* Container */
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Centering Text */
+.text-center {
+    text-align: center;
+}
+
+/* Table Styles */
+.course-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.course-table th, .course-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.course-table th {
+    background-color: #007bff; 
+    color: #fff;
+}
+
+.course-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.course-table a.course-link {
+    color:  #034430;
+    text-decoration: none;
+}
+
+.course-table a.course-link:hover {
+    text-decoration: underline;
+}

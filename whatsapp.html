@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us via WhatsApp</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Basic reset and styling */
+        body, h1, form, div {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html, body {
+            height: 100%;
+            width: 100%;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 100%;
+            width: 100%;
+            max-height: 100%;
+            height: auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            box-sizing: border-box;
+            overflow: hidden; /* Ensures no scrollbars appear */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        form {
+            width: 100%;
+            max-width: 600px;
+        }
+
+        .input-group {
+            margin-bottom: 15px;
+        }
+
+        .input-group label {
+            display: block;
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .input-group input, .input-group textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+
+        .input-group textarea {
+            height: 100px;
+            resize: vertical;
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            background-color: #25D366; /* WhatsApp color */
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #1ebe58; /* Slightly darker green */
+        }
+
+        .whatsapp-link {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .whatsapp-link a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #25D366; /* WhatsApp color */
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
+        }
+
+        .whatsapp-link a:hover {
+            background-color: #1ebe58; /* Slightly darker green */
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+
+            h1 {
+                font-size: 24px;
+                margin-bottom: 15px;
+            }
+
+            .input-group input, .input-group textarea {
+                font-size: 14px;
+            }
+
+            button {
+                padding: 10px;
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Contact Us via WhatsApp</h1>
+        <form action="https://wa.me/1234567890" method="get" target="_blank">
+            <div class="input-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="input-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit">Send via WhatsApp</button>
+        </form>
+        <div class="whatsapp-link">
+            <a href="https://wa.me/1234567890" target="_blank">Chat with us on WhatsApp</a>
+        </div>
+    </div>
+</body>
+</html>

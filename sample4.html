@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="style4.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo">
+              <a href="homepage.html"><img src="LOGO.png" alt="Logo"></a>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <div class="left">
+            <div class="info-card">
+                <div class="icon"><img src="call.png" alt="Phone"></div>
+                <div class="info">
+                    <label><b>Phone Number</b></label>
+                    <p>(225) 555-018</p>
+                </div>
+            </div>
+            
+            <div class="info-card">
+                <div class="icon"><img src="sms.png" alt="Email"></div>
+                <div class="info">
+                    <label><b>Email Address</b></label>
+                    <p>dolores.chambers@example.com</p>
+                </div>
+            </div>
+
+            <div class="info-card">
+                <div class="icon"><img src="location.png" alt="Location"></div>
+                <div class="info">
+                    <label><b>Location</b></label>
+                    <p>Lot 49A, Sedco Industrial Estate, Jalan Kilang, Kolombong, 88450 Kota Kinabalu, Sabah</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="right">
+            <h1 style="color: #034430;">Registration Form</h1>
+            <form action="submit.php" method="POST">
+                <input class="input-field" type="text" name="first_name" placeholder="First Name" required>
+                <input class="input-field" type="text" name="last_name" placeholder="Last Name" required>
+                <input class="input-field" type="email" name="email" placeholder="Email Address*" required>
+                <textarea class="input-field" name="course_spec" placeholder="Specification for Course*" required></textarea>
+                <button class="submit-btn" type="submit">PAY AMOUNT</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
